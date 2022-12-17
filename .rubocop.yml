@@ -1,0 +1,14 @@
+require:
+  - rubocop-rake
+  - rubocop-rails
+  - rubocop-rspec
+  - rubocop-packaging
+  - rubocop-performance
+
+AllCops:
+  NewCops: enable
+
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
