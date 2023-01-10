@@ -20,7 +20,7 @@ module ActiveShard
     private
 
     def skip_middleware?(path)
-      path == '/cashbacks/go_shopping'
+      path == '/cashbacks/go_shopping' || path.starts_with?('/rails/active_storage')
     end
 
     def find_shard(api_key)
