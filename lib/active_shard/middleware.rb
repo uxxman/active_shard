@@ -30,7 +30,7 @@ module ActiveShard
       when Rails.application.credentials.api_key!
         :default
       else
-        Bank.find_by(api_key:)&.shard_name
+        Bank.active.find_by(api_key:)&.shard_name
       end
     end
   end
